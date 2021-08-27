@@ -10,6 +10,28 @@ namespace ApartmentRenovation
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("How many rooms do you want?");
+            int qtyOfRooms = Convert.ToInt32(Console.ReadLine());
+
+            Room[] rooms = new Room[qtyOfRooms];
+
+            Console.WriteLine("What style of flat do you want?");
+            string styleOfFlat = Console.ReadLine();
+
+            for (int i = 0; i < qtyOfRooms; i++)
+            {
+                rooms[i] = new Room();
+                if (styleOfFlat == "Light")
+                {
+                    rooms[i].Chandelier = "Light Chandelier";
+                    rooms[i].Wallpapers = "Light Wallpapers";
+                }
+                if (styleOfFlat == "Dark")
+                {
+                    rooms[i].Chandelier = "Dark Chandelier";
+                    rooms[i].Wallpapers = "Dark Wallpapers";
+                }
+            }
         }
     }
 }
