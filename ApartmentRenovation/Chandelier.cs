@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public interface IRoom
+    public class Chandelier : IChandelier
     {
-        IWallpapers CreateWallpapers();
-
-        IChandelier CreateChandelier();
+        public string Color { get; set; }
     }
 }
