@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public interface IWallpapers
+    public class LightChandelier : Chandelier
     {
-        Wallpapers CreateDarkWallpapers();
-
-        Wallpapers CreateLightWallpapers();
-
+        private string Color = "Light";
     }
 }

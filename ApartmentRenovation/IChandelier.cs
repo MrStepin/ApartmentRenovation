@@ -8,6 +8,9 @@ namespace ApartmentRenovation
 {
     public interface IChandelier
     {
-        string Color { get; set; }
+        Chandelier CreateDarkChandelier();
+
+        Chandelier CreateLightChandelier();
+
     }
 }

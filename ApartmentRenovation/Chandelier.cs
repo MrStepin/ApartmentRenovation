@@ -8,6 +8,14 @@ namespace ApartmentRenovation
 {
     public class Chandelier : IChandelier
     {
-        public string Color { get; set; }
+        public Chandelier CreateDarkChandelier()
+        {
+            return new DarkChandelier();
+        }
+
+        public Chandelier CreateLightChandelier()
+        {
+            return new LightChandelier();
+        }
     }
 }

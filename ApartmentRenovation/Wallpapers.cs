@@ -8,6 +8,15 @@ namespace ApartmentRenovation
 {
     public class Wallpapers : IWallpapers
     {
-       public string Color { get; set; }
+        
+        public Wallpapers CreateDarkWallpapers()
+        {
+            return new DarkWallpapers();
+        }
+
+        public Wallpapers CreateLightWallpapers()
+        {
+            return new LightWallpapers();
+        }
     }
 }

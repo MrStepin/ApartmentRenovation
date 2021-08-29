@@ -23,13 +23,13 @@ namespace ApartmentRenovation
                 rooms[i] = new Room();
                 if (styleOfFlat == "Light")
                 {
-                    rooms[i].CreateChandelier().Color = styleOfFlat;
-                    rooms[i].CreateWallpapers().Color = styleOfFlat;
+                    rooms[i].CreateChandelier().CreateLightChandelier();
+                    rooms[i].CreateWallpapers().CreateLightWallpapers();
                 }
                 if (styleOfFlat == "Dark")
                 {
-                    rooms[i].CreateChandelier().Color = styleOfFlat;
-                    rooms[i].CreateWallpapers().Color = styleOfFlat;
+                    rooms[i].CreateChandelier().CreateDarkChandelier();
+                    rooms[i].CreateWallpapers().CreateDarkWallpapers();
                 }
             }
         }
