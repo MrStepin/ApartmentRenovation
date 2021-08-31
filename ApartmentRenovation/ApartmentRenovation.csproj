@@ -48,9 +48,7 @@
     <Compile Include="LightRoomCreator.cs" />
     <Compile Include="DarkChandelier.cs" />
     <Compile Include="DarkWallpapers.cs" />
-    <Compile Include="IChandelier.cs" />
     <Compile Include="IRoom.cs" />
-    <Compile Include="IWallpapers.cs" />
     <Compile Include="LightChandelier.cs" />
     <Compile Include="LightWallpapers.cs" />
     <Compile Include="Program.cs" />

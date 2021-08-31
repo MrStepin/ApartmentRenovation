@@ -11,8 +11,8 @@ namespace ApartmentRenovation
         public Room CreateRoom()
         {
             Room room = new Room();
-            room.CreateChandelier().CreateDarkChandelier();
-            room.CreateWallpapers().CreateDarkWallpapers();
+            room.Chandelier = new DarkChandelier();
+            room.Wallpaper = new DarkWallpapers();
 
             return room;
         }

@@ -6,17 +6,8 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class Wallpapers : IWallpapers
+    public class Wallpapers
     {
-        
-        public Wallpapers CreateDarkWallpapers()
-        {
-            return new DarkWallpapers();
-        }
-
-        public Wallpapers CreateLightWallpapers()
-        {
-            return new LightWallpapers();
-        }
+         public string Color { get; set; }
     }
 }

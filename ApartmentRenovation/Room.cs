@@ -8,14 +8,8 @@ namespace ApartmentRenovation
 {
     public class Room : IRoom
     {
-        public IWallpapers CreateWallpapers()
-        {
-            return new Wallpapers();
-        }
+        public Wallpapers Wallpaper { get; set; }
 
-        public IChandelier CreateChandelier()
-        {
-            return new Chandelier();
-        }
+        public Chandelier Chandelier { get; set; }
     }
 }

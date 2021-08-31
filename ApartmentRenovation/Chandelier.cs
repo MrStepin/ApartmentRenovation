@@ -6,16 +6,8 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class Chandelier : IChandelier
+    public class Chandelier
     {
-        public Chandelier CreateDarkChandelier()
-        {
-            return new DarkChandelier();
-        }
-
-        public Chandelier CreateLightChandelier()
-        {
-            return new LightChandelier();
-        }
+        public string Color { get; set; }
     }
 }
