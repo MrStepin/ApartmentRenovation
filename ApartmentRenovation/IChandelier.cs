@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class Wallpapers
+    public interface IChandelier
     {
-         public string Color { get; set; }
+        
     }
 }

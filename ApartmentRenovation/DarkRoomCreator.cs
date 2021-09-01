@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class DarkRoomCreator : IRoomFactory
+    public class DarkRoomCreator : IFactory
     {
         public Room CreateRoom()
         {

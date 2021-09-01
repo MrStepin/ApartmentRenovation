@@ -8,8 +8,8 @@ namespace ApartmentRenovation
 {
     public interface IRoom
     {
-        Wallpapers Wallpaper { get; set; }
+        IWallpapers Wallpaper { get; set; }
 
-        Chandelier Chandelier { get; set; }
+        IChandelier Chandelier { get; set; }
     }
 }

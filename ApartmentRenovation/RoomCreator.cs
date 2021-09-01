@@ -8,20 +8,18 @@ namespace ApartmentRenovation
 {
     public class RoomCreator
     {
-        public Room CreateRoom(string styleOfFlat)
+        public IFactory CreateRoom(string styleOfFlat)
         {
-            Room room = new Room();
-
             if (styleOfFlat == "Light")
             {
-                room = new LightRoomCreator().CreateRoom();
+                return new LightRoomCreator();
             }
             if (styleOfFlat == "Dark")
             {
-                room = new DarkRoomCreator().CreateRoom();
+                return new DarkRoomCreator();
             }
 
-            return room;
+            return null;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class LightChandelier : Chandelier
+    public class LightChandelier : IChandelier
     {
         private string Color = "Light";
     }

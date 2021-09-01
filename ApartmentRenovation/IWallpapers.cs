@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public interface IRoomFactory
+    public interface IWallpapers
     {
-        Room CreateRoom();
     }
 }

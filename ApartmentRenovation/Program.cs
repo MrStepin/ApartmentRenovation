@@ -18,9 +18,11 @@ namespace ApartmentRenovation
             Console.WriteLine("What style of flat do you want?");
             string styleOfFlat = Console.ReadLine();
 
+            IFactory newRoom = new RoomCreator().CreateRoom(styleOfFlat);
+
             for (int i = 0; i < qtyOfRooms; i++)
             {
-                rooms[i] = new RoomCreator().CreateRoom(styleOfFlat);
+                rooms[i] = newRoom.CreateRoom();
             }
         }
     }

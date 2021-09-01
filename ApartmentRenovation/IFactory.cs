@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class Chandelier
+    public interface IFactory
     {
-        public string Color { get; set; }
+        Room CreateRoom();
+
     }
 }
