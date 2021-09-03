@@ -8,6 +8,5 @@ namespace ApartmentRenovation
 {
     public interface IChandelier
     {
-        
     }
 }

@@ -8,13 +8,14 @@ namespace ApartmentRenovation
 {
     public class DarkRoomCreator : IFactory
     {
-        public Room CreateRoom()
+        public IChandelier CreateChandelier()
         {
-            Room room = new Room();
-            room.Chandelier = new DarkChandelier();
-            room.Wallpaper = new DarkWallpapers();
+            return new DarkChandelier();
+        }
 
-            return room;
+        public IWallpapers CreateWallpapers()
+        {
+            return new DarkWallpapers();
         }
     }
 }

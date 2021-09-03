@@ -8,7 +8,8 @@ namespace ApartmentRenovation
 {
     public interface IFactory
     {
-        Room CreateRoom();
+        IWallpapers CreateWallpapers();
 
+        IChandelier CreateChandelier();
     }
 }

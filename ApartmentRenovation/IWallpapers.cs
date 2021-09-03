@@ -8,5 +8,6 @@ namespace ApartmentRenovation
 {
     public interface IWallpapers
     {
+        
     }
 }
