@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class LightRoomCreator : IFactory
+    public class LightRoomFactory : IFactory
     {
         public IWallpapers CreateWallpapers()
         {
-            return new LightChandelier();
+            return new LightWallpapers();
         }
 
         public IChandelier CreateChandelier()
         {
-            return new LightWallpapers();
+            return new LightChandelier();
         }
     }
 }

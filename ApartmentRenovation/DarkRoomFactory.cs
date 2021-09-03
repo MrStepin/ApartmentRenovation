@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApartmentRenovation
 {
-    public class DarkRoomCreator : IFactory
+    public class DarkRoomFactory : IFactory
     {
         public IChandelier CreateChandelier()
         {

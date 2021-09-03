@@ -44,9 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IWallpapers.cs" />
-    <Compile Include="DarkRoomCreator.cs" />
+    <Compile Include="DarkRoomFactory.cs" />
     <Compile Include="IFactory.cs" />
-    <Compile Include="LightRoomCreator.cs" />
+    <Compile Include="LightRoomFactory.cs" />
     <Compile Include="DarkChandelier.cs" />
     <Compile Include="DarkWallpapers.cs" />
     <Compile Include="LightChandelier.cs" />
@@ -54,7 +54,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IChandelier.cs" />
-    <Compile Include="RoomCreator.cs" />
+    <Compile Include="Room.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
